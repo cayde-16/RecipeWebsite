@@ -360,8 +360,124 @@ ul{
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: var(--borderRadius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.hero-text{
+    text-align: center;
+    color: var(--white);
+}
+
+@media screen and (min-width:768px) {
+    .hero-text h1{
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+}
 
 /* end of hero */
+
+/* recipes */
+.recipes-container{
+    display: grid;
+    gap: 2rem 1rem;
+    border: 2px solid red;
+}
+
+.tags-container{
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    padding-bottom:3rem;
+}
+
+.recipes-list{
+    display: grid;
+    gap: 2rem 1rem;
+    padding-bottom: 3rem;
+    border: solid 2px green;
+}
+.tags-container h4{
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.tags-list{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+}
+
+.tags-list a{
+    text-transform: capitalize;
+    display: block;
+    color: var(--grey-500);
+    transition: var(--transition);
+}
+
+.tags-list a:hover{
+    color: var(--primary-500);
+}
+
+.single-recipe{
+    display: block;
+}
+
+.recipe-img{
+    height: 15rem;
+    border-radius: var(--borderRadius);
+    margin-bottom: 1rem;
+}
+
+.single-recipe h5{
+    margin-bottom: 0;
+    line-height: 1;
+    color: var(--grey-700);
+}
+
+.single-recipe p{
+    margin-bottom: 0;
+    line-height: 1;
+    margin-top: 0.5rem;
+    color: var(--grey-500);
+    letter-spacing: var(--letterSpacing);
+    
+}
+/* end of recipes */
+
+@media screen and (min-width:576px) {
+    .recipes-list{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .recipe-img{
+        height: 14rem;
+    }
+
+}
+
+@media screen and (min-width:992px) {
+    .recipes-container{
+        grid-template-columns: 200px 1fr;
+    }
+    
+    .single-recipe p {
+        font-size: 0.85rem;
+    }
+    .tags-list{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .recipes-list{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .single-recipe h5{
+        font-size: 1.15rem;
+    }
+}
