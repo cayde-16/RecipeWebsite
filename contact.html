@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact || Starter</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- start nav -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a class="nav-logo" href="index.html">
+            <img src="./assets/logo.svg" alt="simply recipes" />
+          </a>
+
+          <button class="btn nav-btn">
+            <i id="i" class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <div class="nav-links">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="tags.html">Tags</a>
+          <a class="nav-link" href="recipes.html">Recipes</a>
+
+          <div class="nav-link contact-link">
+            <a class="btn" href="contact.html"> Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav -->
+
+    <main class="page">
+      <section class="contact-container">
+        <article>
+          <h3>Want to get In Touch?</h3>
+          <p>I'm here and eager to connect with you! Whether you have questions, ideas to share, or just want to chat, your message means a lot.</p>
+          <p>Feel free to reach out to me through the contact form below, and I'll personally respond as soon as I can. </p>
+          <p>Looking forward to getting in touch and having a great conversation!</p>
+        </article>
+
+        <article>
+          <form class="form contact-form">
+            <!-- Single form row -->
+            <div class="form-row">
+              <label for="name" class="form-label">Your name</label>
+              <input type="text" name="name" id="name" placeholder="Name" class="form-input">
+            </div>
+            <!-- end of single row -->
+
+
+            <!-- Single form row -->
+            <div class="form-row">
+              <label for="email" class="form-label">Your email</label>
+              <input type="text" name="email" id="email" placeholder="Email" class="form-input">
+            </div>
+            <!-- end of single row -->
+            <div class="form-row">
+              <label for="message" class="form-label">Message</label>
+              <textarea name="message" id="message" placeholder="Type your Message" class="form-textarea">
+
+              </textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-block">
+              Sumbit
+            </button>
+          </form>
+        </article>
+          
+      </section>
+
+
+
+      <section class="featured-recipes">
+        <h5 class="featured-title">
+          Featured Recipes
+        </h5>
+        <div class="recipes-list">
+
+          <!-- single recipe -->
+          <a class="single-recipe" href="single-recipe.html">
+              <img class="img recipe-img" src="./assets/recipes/recipe-1.jpeg" alt="food">
+              <h5>carne asada</h5>
+              <p>Prep : 15 min | cook : 5min</p>
+          </a>
+          <!-- end of single recipe -->
+
+          <!-- single recipe -->
+          <a class="single-recipe" href="single-recipe.html">
+              <img class="img recipe-img" src="./assets/recipes/recipe-2.jpeg" alt="food">
+              <h5>Greek Ribs</h5>
+              <p>Prep : 15 min | cook : 5min</p>
+          </a>
+          <!-- end of single recipe -->
+
+          <!-- single recipe -->
+          <a class="single-recipe" href="single-recipe.html">
+              <img class="img recipe-img" src="./assets/recipes/recipe-3.jpeg" alt="food">
+              <h5>Vegatable Soup</h5>
+              <p>Prep : 15 min | cook : 5min</p>
+          </a>
+          <!-- end of single recipe -->
+
+          <!-- single recipe -->
+          <a class="single-recipe" href="single-recipe.html">
+              <img class="img recipe-img" src="./assets/recipes/recipe-4.jpeg" alt="food">
+              <h5>Banana Pancakes</h5>
+              <p>Prep : 15 min | cook : 5min</p>
+          </a>
+          <!-- end of single recipe -->
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">SimplyRecipes</span>
+        Built by <span class="footer-logo">Cade Heck</span>
+      </p>
+    </footer>
+
+    <!-- end of footer -->
+    <script type="text/javascript" src="./js/index.js" ></script>
+
+  </body>
+</html>
